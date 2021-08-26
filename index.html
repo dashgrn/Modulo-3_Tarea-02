@@ -11,7 +11,7 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="d-flex flex-column vh-100">
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -25,11 +25,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a id="homeBtn" class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <button class="btn btn-secondary" type="submit">Registro</button>
+                    <button id="" class="btn btn-secondary" type="submit">Registro</button>
                 </form>
             </div>
         </div>
@@ -40,25 +40,25 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/Modulo-3/Tarea-02/img/ff9.png" class="rounded mx-auto d-block" alt="...">
+                <img src="/Modulo-3_Tarea-02/img/ff9.png" class="rounded mx-auto d-block" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="/Modulo-3/Tarea-02/img/avt.png" class="d-block w-100" alt="...">
+                <img src="/Modulo-3_Tarea-02/img/avt.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="/Modulo-3/Tarea-02/img/bw.png" class="d-block w-100" alt="...">
+                <img src="/Modulo-3_Tarea-02/img/bw.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="/Modulo-3/Tarea-02/img/inc.png" class="d-block w-100" alt="...">
+                <img src="/Modulo-3_Tarea-02/img/inc.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="/Modulo-3/Tarea-02/img/its.png" class="d-block w-100" alt="...">
+                <img src="/Modulo-3_Tarea-02/img/its.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="/Modulo-3/Tarea-02/img/prs.png" class="d-block w-100" alt="...">
+                <img src="/Modulo-3_Tarea-02/img/prs.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="/Modulo-3/Tarea-02/img/tdk.png" class="d-block w-100" alt="...">
+                <img src="/Modulo-3_Tarea-02/img/tdk.png" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -75,17 +75,18 @@
 
 
     <!-- cards -->
-    <div class="card" style="width: 18rem;">
-        <img id="movieThumb" src="" class="card-img-top" alt="...">
-        <div id="movieName" class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+    <div id="cardsContainer" class="d-flex flex-column">
+        <div class="card" style="width: 18rem;">
+            <img id="titleImg" src="" class="card-img-top" alt="...">
+            <div id="movieName" class="card-body">
+                <p id="titleName" class="card-text">Movie Name.</p>
+            </div>
         </div>
     </div>
 
     <!-- footer -->
 
-    <footer class="footer mt-auto py-3 bg-light">
+    <footer class="footer mt-auto py-3 mt-auto bg-light">
         <div class="container">
             <span class="text-muted">&copy Jose Fernández</span>
         </div>
