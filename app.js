@@ -1,54 +1,60 @@
 const btnHome = document.getElementById('homeBtn');
-const btnRegister = documen.getElementById('');
+const btnRegister = document.getElementById('regBtn');
 const cardsContainer = document.getElementById('cardsContainer');
+const cardsMain = document.getElementById('cardsMain');
 const titleName = document.getElementById('titleName');
 const titleImg = document.getElementById('titleImg');
-const fragment = document.createDocumentFragment();
+const cardFragment = document.createDocumentFragment();
 
 // array con titulos
 let movieTitles = [
     {
         title: "Fast and Furious 9",
-        img: "url",
-        score: 0
+        img: "./img/ff9.png",
+        score: 5
     },
     {
         title: "Avatar",
-        img: "",
-        score: 0
+        img: "./img/avt.png",
+        score: 8
     },
     {
         title: "Black Widow",
-        img: "",
-        score: 0
+        img: "./img/bw.png",
+        score: 5
     },
     {
         title: "Inception",
-        img: "",
-        score: 0
+        img: "./img/inc.png",
+        score: 9
     },
     {
         title: "Interstellar",
-        img: "",
-        score: 0
+        img: "./img/its.png",
+        score: 9.5
     },
     {
-        title:"Parasite",
-        img: "",
-        score: 0
+        title: "Parasite",
+        img: "./img/prs.png",
+        score: 9.7
     },
     {
         title: "The Dark Knight",
-        img: "",
-        score: 0
+        img: "./img/tdk.png",
+        score: 9
     }
 ]
 
-function cardConstructor (movie) {
-    movieTitles.forEach((movie) => {
+function cardConstructor(movieData) {
+    movieData.forEach((movie) => {
         titleName.textContent = movie.title;
         titleImg.setAttribute('src', movie.img)
-    })
 
-    const cardIterator = cardsContainer.cloneNode(fragment);
+        const newCards = cardsContainer.cloneNode(true);
+        cardFragment.appendChild(newCards);
+    })
+    cardsMain.appendChild(cardFragment);
+    
 }
+
+cardConstructor(movieTitles);
