@@ -17,7 +17,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="https://image.flaticon.com/icons/png/512/1101/1101793.png" alt="" width="30" height="30">
+                <img class="svg" src="https://image.flaticon.com/icons/png/512/1101/1101793.png" alt="" width="30"
+                    height="30">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -31,56 +32,58 @@
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <button id="regBtn" class="btn btn-secondary" type="submit">Registro</button>
+                    <a id="regBtn" class="btn btn-secondary" type="submit" href="./register.html">Registro</a>
                 </form>
             </div>
         </div>
     </nav>
 
     <!-- slider -->
-
-    <div id="carouselControls" class="carousel slide py-3" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img/ff9.png" class="rounded mx-auto d-block" alt="...">
+    <div class="container-fluid">
+        <div id="carouselControls" class="carousel slide py-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./movies/img/ff9.png" class="rounded mx-auto d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./movies/img/avt.png" class="rounded mx-auto d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./movies/img/bw.png" class="rounded mx-auto d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./movies/img/inc.png" class="rounded mx-auto d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./movies/img/its.png" class="rounded mx-auto d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./movies/img/prs.png" class="rounded mx-auto d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./movies/img/tdk.png" class="rounded mx-auto d-block" alt="...">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="./img/avt.png" class="rounded mx-auto d-block" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/bw.png" class="rounded mx-auto d-block" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/inc.png" class="rounded mx-auto d-block" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/its.png" class="rounded mx-auto d-block" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/prs.png" class="rounded mx-auto d-block" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/tdk.png" class="rounded mx-auto d-block" alt="...">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 
 
     <!-- cards -->
-    <div class="flex-wrap">
+    <div class="flex-wrap py-2">
         <div class="card-columns">
             <div id="cardsMain" class="d-flex">
                 <div id="cardsContainer" class="card m-1 border-0" style="width: 18rem;">
+                    <a id="detailsUrl" class="stretched-link" href=""></a>
                     <img id="titleImg" src="" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p id="titleName" class="card-text">Movie Name.</p>

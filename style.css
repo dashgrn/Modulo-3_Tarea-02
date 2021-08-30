@@ -1,0 +1,8 @@
+.svg {
+    fill: white;
+    color: white;
+}
+
+.svg:hover {
+    fill: red;
+}
